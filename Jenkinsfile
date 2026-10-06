@@ -31,10 +31,13 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat '''
-                    docker build -t sanskritverse-backend:latest ./backend
-                    docker build -t sanskritverse-frontend:latest ./frontend
-                '''
+                withEnv(['PATH+DOCKER=C:\\Users\\baran\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin']) {
+                    bat '''
+                        docker --version
+                        docker build -t sanskritverse-backend:latest ./backend
+                        docker build -t sanskritverse-frontend:latest ./frontend
+                    '''
+                }
             }
         }
 
