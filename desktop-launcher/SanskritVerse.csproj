@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>SanskritVerseLauncher</RootNamespace>
+    <AssemblyName>SanskritVerse</AssemblyName>
+    <ApplicationTitle>SanskritVerse - AI Sanskrit Learning &amp; Linguistics Lab</ApplicationTitle>
+    <Version>1.0.0</Version>
+    <Authors>SanskritVerse Team</Authors>
+    <Description>SanskritVerse Windows Desktop Launcher</Description>
+  </PropertyGroup>
+
+</Project>
