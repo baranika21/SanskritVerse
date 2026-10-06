@@ -15,7 +15,8 @@ import {
   Trophy,
   CheckCircle2,
   Clock,
-  Target
+  Target,
+  Lightbulb
 } from 'lucide-react';
 
 export const DashboardPage: React.FC = () => {
@@ -276,6 +277,23 @@ export const DashboardPage: React.FC = () => {
                 </>
               )}
             </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Daily Learning Tip */}
+      <div className="glass-card rounded-2xl p-5 border border-teal-500/30 bg-gradient-to-r from-teal-900/20 via-slate-900/80 to-teal-900/10">
+        <div className="flex items-start gap-4">
+          <span className="shrink-0 p-2.5 rounded-xl bg-teal-500/20 border border-teal-500/30 text-teal-400">
+            <Lightbulb className="w-5 h-5" />
+          </span>
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-wider text-teal-400 mb-1 flex items-center gap-1.5">
+              <span>💡 Daily Learning Tip</span>
+            </div>
+            <p className="text-sm text-slate-200 leading-relaxed">
+              Practice one Sanskrit sentence every day. Start with simple sentences and gradually increase their complexity.
+            </p>
           </div>
         </div>
       </div>
